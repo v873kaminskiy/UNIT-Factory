@@ -6,12 +6,12 @@
 #    By: vkaminsk <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/01/18 20:18:03 by vkaminsk          #+#    #+#              #
-#    Updated: 2017/02/01 15:28:14 by vkaminsk         ###   ########.fr        #
+#    Updated: 2017/02/01 15:31:43 by vkaminsk         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
 NAME = libftprintf.a
-SOURCES =  libft/ft_bzero.c libft/ft_putchar_fd.c libft/ft_itoa.c libft/ft_putchar.c libft/ft_putstr.c libft/ft_putstr_fd.c libft/ft_strnew.c
+SOURCES = ft_printf.c libft/ft_bzero.c libft/ft_putchar_fd.c libft/ft_itoa.c libft/ft_putchar.c libft/ft_putstr.c libft/ft_putstr_fd.c libft/ft_strnew.c
 OBJECTS = $(subst .c,.o,$(SOURCES))
 all: $(NAME)
 $(NAME): $(OBJECTS)
