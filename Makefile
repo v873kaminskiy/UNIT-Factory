@@ -6,7 +6,7 @@
 #    By: vkaminsk <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/01/18 20:18:03 by vkaminsk          #+#    #+#              #
-#    Updated: 2017/02/01 15:24:16 by vkaminsk         ###   ########.fr        #
+#    Updated: 2017/02/01 15:28:14 by vkaminsk         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -16,6 +16,7 @@ OBJECTS = $(subst .c,.o,$(SOURCES))
 all: $(NAME)
 $(NAME): $(OBJECTS)
 	ar rc $(NAME) $(OBJECTS)
+	ranlib $(NAME)
 $(OBJECT): $(SOURCES)
 	gcc -Wall -Wextra -Werror -c $(SOURCES) libft/libft.a
 clean:
